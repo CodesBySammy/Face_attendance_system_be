@@ -1,0 +1,11 @@
+{
+    "version": 2,
+    "builds": [
+      { "src": "api/face_recognition_api.py", "use": "@vercel/python" }
+    ],
+    "routes": [
+      { "src": "/register", "dest": "/api/face_recognition_api.py" },
+      { "src": "/recognize", "dest": "/api/face_recognition_api.py" }
+    ]
+  }
+  
